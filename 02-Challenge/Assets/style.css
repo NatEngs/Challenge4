@@ -1,25 +1,99 @@
-body{
-	font-size: 20px;
-	font-family: sans-serif;
-	color: #333;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-image: url(./images/relaxing\ background.gif);
+    background-size: 100vw;
+    /* background-position: 50%; */
+    color: whitesmoke;
 }
-.question{
-	font-weight: 600;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(18, 92, 114);
+    color: whitesmoke;
+    padding: 6px;
 }
-.answers {
-    margin-bottom: 20px;
+
+time {
+    min-width: 85px;
 }
-#submit{
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: #297;
-	color: #fff;
-	border: 0px;
-	border-radius: 3px;
-	padding: 20px;
-	cursor: pointer;
-	margin-bottom: 20px;
+
+/* Main quiz styles and presentation */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#submit:hover{
-	background-color: #3a8;
+
+.start {
+    display: inline;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid;
+    border-width: 2px;
+}
+
+.inline-buttons {
+    display: inline-flex;
+}
+
+.card {
+    width: 80vw;
+    margin-top: 40px;
+    border: solid;
+    border-width: 2px;
+    padding: 5vw;
+    border-radius: 30px;
+    border-color: whitesmoke;
+}
+
+
+.options-button {
+    width: 40%;
+    text-align: left;
+    margin: 5px;
+}
+
+#result-div {
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+/* Scores input styling and leaderboard */
+
+.inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#initials {
+    width: 25%;
+    margin-right: 8px;
+    padding: 1vh;
+}
+
+#back-button {
+    margin-right: 8px;
+}
+
+.highscore-list {
+    padding-inline-start: 20px;
+}
+
+a:hover {
+    color: #cbe1e0;
+}
+
+button:hover {
+    background-color: rgb(18, 92, 114);
+    color: whitesmoke;
 }
