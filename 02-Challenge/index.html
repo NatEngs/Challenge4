@@ -1,21 +1,104 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Take the 60 Second Quiz</title>
-    <link type="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Javascript Quiz</title>
 </head>
 
-<header>
-    <p>View High Scores <!--make this a hyperlink --></p>
-</header>
-
 <body>
-    <div id="quiz"></div>
-    <button id="submit">Get Results</button>
-    <div id="results"></div> 
+    <header>
+        <a id=leaderboard-link>View Highscores</a> 
+        
+        <time>Time: <span id="time"></span></time>
+    </header>
 
- <script href="/Assets/script.js"></script>
+    <main>
+        <div id=start-card class="card">
+            <h2 id=title>JavaScript Challenge Quiz</h2>
+            <p>How well do you know basic JavaScript?  Can you answer the questions within the time limit? <br><br> For every correct answer you will receive 5 seconds on the clock. <br><br> However, every incorrect answer deduct ten seconds from the clock!</p>
+            <button id=start-button class="button">Challenge Accepted</button>
+        </div>
+
+        <div hidden id=question-card class="card">
+
+            <h2 id=question-text></h2>
+
+            <div id=quiz-options>
+                <button id=option0 class="button options-button"></button>
+                <button id=option1 class="button options-button"></button>
+                <button id=option2 class="button options-button"></button>
+                <button id=option3 class="button options-button"></button>
+            </div>
+
+            <div hidden id=result-div>
+                <p id=result-text></p>
+                <img id="nickCage" src=""></img>
+            </div>
+
+        </div>
+
+        <div hidden id=score-card class="card">
+            <h2>Congratulations!  You've completed the quiz.</h2>
+            <p>Your score is <span id=score></span>.</p>
+            <form class="inline-form" id="submission-form">
+                  <input type="text" id="initials" placeholder="Enter Initials">
+                  <button id="submit-button" class="button">Submit</button>
+            </form>
+        </div>
+
+        <div hidden id=leaderboard-card class="card">
+            <h2>Highscores</h2>
+            <ol id="highscore-list">
+            </ol>
+            <div class="inline-buttons">
+                <button id="back-button" class="button">Home</button>
+                <button id="clear-button" class="button">Reset</button>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="./Assets/script.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
