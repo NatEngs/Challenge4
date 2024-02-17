@@ -19,7 +19,6 @@ time {
     min-width: 85px;
 }
 
-/* Main quiz styles and presentation */
 main {
     display: flex;
     align-items: center;
@@ -40,7 +39,7 @@ main {
     border-width: 2px;
 }
 
-.inline-buttons {
+.highscoreButtons {
     display: inline-flex;
 }
 
@@ -54,38 +53,35 @@ main {
     border-color: whitesmoke;
 }
 
-
-.options-button {
+.optionsButton {
     width: 40%;
     text-align: left;
     margin: 5px;
 }
 
-#result-div {
+#resultDiv {
     display: flex;
     color: whitesmoke;
     justify-content: center;
 }
 
-/* Scores input styling and leaderboard */
-
-.inline-form {
+.resultsForm {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-#initials {
+#name {
     width: 25%;
     margin-right: 8px;
     padding: 1vh;
 }
 
-#back-button {
+#backButton {
     margin-right: 8px;
 }
 
-.highscore-list {
+.highscoreList {
     padding-inline-start: 20px;
 }
 

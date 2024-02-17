@@ -9,52 +9,55 @@
 
 <body>
     <header>
-        <a id=leaderboard-link>View Highscores</a> 
+        <a id=scoreboardLink>View Highscores</a> 
         
         <time>Time: <span id="time"></span></time>
     </header>
 
     <main>
-        <div id=start-card class="card">
+        <div id=startCard class="card">
             <h2 id=title>JavaScript Challenge Quiz</h2>
-            <p>How well do you know basic JavaScript?  Can you answer the questions within the time limit? <br><br> For every correct answer you will receive 5 seconds on the clock. <br><br> However, every incorrect answer deduct ten seconds from the clock!</p>
+            <p>How well do you know basic JavaScript?  Can you answer the questions within the time limit? 
+                <br><br> For every correct answer you will receive 5 seconds on the clock. 
+                <br><br> However, every incorrect answer deduct ten seconds from the clock!
+                <br><br> Your score will be how much time is left on the clock!</p>
             <button id=start-button class="button">Challenge Accepted</button>
         </div>
 
-        <div hidden id=question-card class="card">
+        <div hidden id=questionCard class="card">
 
-            <h2 id=question-text></h2>
+            <h1 id=questionText></h2>
 
-            <div id=quiz-options>
-                <button id=option0 class="button options-button"></button>
-                <button id=option1 class="button options-button"></button>
-                <button id=option2 class="button options-button"></button>
-                <button id=option3 class="button options-button"></button>
+            <div id=quizOptions>
+                <button id=option0 class="button optionsButton"></button>
+                <button id=option1 class="button optionsButton"></button>
+                <button id=option2 class="button optionsButton"></button>
+                <button id=option3 class="button optionsButton"></button>
             </div>
 
-            <div hidden id=result-div>
-                <p id=result-text></p>
+            <div hidden id=resultDiv>
+                <p id=resultText></p>
                 <img id="nickCage" src=""></img>
             </div>
 
         </div>
 
-        <div hidden id=score-card class="card">
-            <h2>Congratulations!  You've completed the quiz.</h2>
+        <div hidden id=scoreCard class="card">
+            <h1>Congratulations!  You've completed the quiz.</h2>
             <p>Your score is <span id=score></span>.</p>
-            <form class="inline-form" id="submission-form">
-                  <input type="text" id="initials" placeholder="Enter Initials">
-                  <button id="submit-button" class="button">Submit</button>
+            <form class="resultsForm" id="submissionForm">
+                  <input type="text" id="name" placeholder="Enter Name">
+                  <button id="submitButton" class="button">Submit</button>
             </form>
         </div>
 
-        <div hidden id=leaderboard-card class="card">
-            <h2>Highscores</h2>
-            <ol id="highscore-list">
+        <div hidden id=scoreboardCard class="card">
+            <h1>Highscores</h2>
+            <ol id="highscoreList">
             </ol>
-            <div class="inline-buttons">
-                <button id="back-button" class="button">Home</button>
-                <button id="clear-button" class="button">Reset</button>
+            <div class="highscoreButtons">
+                <button id="backButton" class="button">Home</button>
+                <button id="clearButton" class="button">Reset</button>
             </div>
         </div>
 
